@@ -10,9 +10,9 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
 
 @RestController
-@Tag(name = "Employee", description = "Сервис для выполнения операций над сотрудниками магазина")
-@RequestMapping("/estore/api/employee")
-public class EmployeeController {
+@Tag(name = "Gateway", description = "Gateway API")
+@RequestMapping("/estore/api/gateway")
+public class GatewayAPIController {
 	
 	@GetMapping("/test")
 	@Operation(summary = "Тестовый метод", responses = {
@@ -21,4 +21,6 @@ public class EmployeeController {
 	public ResponseEntity<String> test() {
 		return ResponseEntity.ok("test");
 	}
+
+
 }
